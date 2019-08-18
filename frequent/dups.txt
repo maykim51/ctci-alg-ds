@@ -1,0 +1,10 @@
+[Graph]
+BFS
+DFS
+Dijkstra
+Topological Sort
+
+[LL]
+Insertion node in LL
+Delete node in LL
+compare two strings as LL
