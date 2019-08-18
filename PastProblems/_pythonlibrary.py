@@ -51,3 +51,53 @@ result = end - start
 # result = end.strftime('%H:%M')
 diff = datetime(100,1,1,11) > datetime(100,1,1,12)
 print(type(end))
+
+
+###generate random number
+print('------generate random number----')
+from random import *
+n = randint
+
+## testing list in list
+print('---------testing list in list---')
+newSubset = [3]
+subset = [2,3,4]
+for value in subset:
+    if value not in newSubset:
+        newSubset.append(value) 
+print(newSubset)
+
+## getting first digit
+print('---------getting first digit---')
+n = 567 % 10
+
+### file 조작 https://simplesolace.tistory.com/entry/%ED%8C%8C%EC%9D%B4%EC%8D%AC-python-%ED%8C%8C%EC%9D%BC
+
+## map
+print('---------map---')
+# two_times.py
+def two_times(numberList):
+    result = [ ]
+    for number in numberList:
+        result.append(number*2)
+    return result
+
+result = two_times([1, 2, 3, 4])
+print(result)
+
+def two_times2(x): 
+        return x*2
+
+print(list(map(two_times2, [1, 2, 3, 4])))
+
+list(map(lambda a: a*2, [1, 2, 3, 4]))
+
+##
+print('-----easy way to define graph list')
+graph = defaultdict(list)
+
+###sorting!!!!!
+# self.graph = sorted(self.graph,key=lambda item: item[2]) 
+
+########orderedDict!!
+#OrderedDict.move_to_end(key)!!!!!!!!!!!!! <- when iserting for cacheing
